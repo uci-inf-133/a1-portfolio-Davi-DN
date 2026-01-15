@@ -1,23 +1,70 @@
-p {
-    font-family: 'Century Gothic';
+body {
+    font-family: 'Raleway', "Georgia";
 }
 
 h1 {
-    font-family: 'Century Gothic';
-    color: antiquewhite;
     align-items: center;
     justify-content: center;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #topbox {
     width: 100%;
-    height: 90px;
+    height: 200%;
     background-color: #333333;
-    padding: 14%px;
+    padding: 14%;
+    padding: 50px 100px 50px 100px;
+    display: flex;
+    gap: 15px;
+}
+
+#toptextbox {
+    display: flex;
+    flex-direction: column;
+    flex: 8;
+}
+
+#topbuttons {
+    display: flex;
+    flex: 1;
+}
+
+.buttontext {
+    color: white;
+}
+
+
+
+#titletext {
+    color: white;
+    font-size: 600%;
+    font-weight: 100;
 }
 
 #titlesubtext {
-    font-family: 'Century Gothic';
-    color: antiquewhite;
-    font-size: 160%;
+    color: white;
+    font-size: 180%;
+    font-weight: 300;
+    padding-left: 7px;
+    flex: 3;
 }
+
+.textpadding {
+    padding: 3% 6% 3% 6%;
+}
+
+#aboutmeheader {
+    font-weight: 600;
+    font-size: 180%;
+    color: #333333;
+}
+
+#aboutmetext {
+    font-weight: 400;
+    font-size: 50px;
+}
+
