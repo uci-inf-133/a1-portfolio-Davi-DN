@@ -17,7 +17,7 @@ a {
     height: 200%;
     background-color: #333333;
     padding: 14%;
-    padding: 50px 100px 50px 100px;
+    padding: 40px 30px 50px 100px;
     display: flex;
     gap: 15px;
 }
@@ -25,7 +25,7 @@ a {
 #toptextbox {
     display: flex;
     flex-direction: column;
-    flex: 8;
+    flex: 3.6;
 }
 
 #topbuttons {
@@ -34,8 +34,54 @@ a {
 }
 
 .buttontext {
+    color: rgb(138, 137, 137);
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.animatedtext {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.animatedtext::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+    
+}
+
+.animatedtext:hover::after {
+    width: 100%;
+}
+
+.animatedtext:hover {
     color: white;
 }
+
+#resumebutton {
+    display: flex;
+    flex: 1;
+}
+
+#contactbutton {
+    display: flex;
+    flex: 1;
+}
+
+#linkbutton {
+    display: flex;
+    flex: 1;
+}
+
+
 
 
 
@@ -58,13 +104,83 @@ a {
 }
 
 #aboutmeheader {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 180%;
     color: #333333;
 }
 
-#aboutmetext {
-    font-weight: 400;
+#aboutmesubtitle {
+    font-weight: 500;
     font-size: 50px;
 }
 
+#aboutmecontent {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+.links-link {
+    cursor: pointer;
+}
+
+/* Hide the checkbox */
+.popup-checkbox {
+    display: none;
+}
+
+/* Popup overlay - hidden by default */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+}
+
+/* Show popup when checkbox is checked */
+.popup-checkbox:checked ~ .popup-overlay {
+    display: block;
+}
+
+/* Popup box */
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+    z-index: 1001;
+}
+
+.close-button {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+    line-height: 20px;
+}
+
+.close-button:hover {
+    color: #333;
+}
+
+.links-info {
+    margin: 20px 0;
+    line-height: 1.8;
+}
