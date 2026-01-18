@@ -36,7 +36,7 @@ a {
 
 .buttontext {
     color: rgb(138, 137, 137);
-    font-weight: bold;
+    font-weight: 400;
     font-size: 120%;
 }
 
@@ -200,4 +200,63 @@ a {
 .links-info {
     margin: 20px 0;
     line-height: 1.8;
+}
+
+
+/* 
+CONTACT Page
+*/
+
+#contactbox {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#contacttitlebox {
+    display:flex;
+    
+    flex: 1;
+}
+
+#contactcontentsbox{
+    display: flex;
+    flex: 3;
+}
+
+#contactmargin {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /*border: 2px solid black;*/
+    
+}
+
+#emailbox {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+
+#contacttitle {
+    font-weight: 700;
+    font-size: 180%;
+    color: #333333;
+}
+
+#emailmetitle {
+    font-weight: 700;
+    font-size: 180%;
+    color: #333333;
+}
+
+.contactportions {
+    font-weight: 500;
+   
+}
+
+#contactcontent {
+    font-weight: 300;
+    font-size: 25px;
 }
