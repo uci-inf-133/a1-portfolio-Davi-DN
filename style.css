@@ -140,18 +140,20 @@ a {
 
 .imageborder {
     border: 6px #333333;
+    width: 100%;
+    height: auto;
 }
+
 
 .links-link {
     cursor: pointer;
 }
 
-/* Hide the checkbox */
+/* Popup */
 .popup-checkbox {
     display: none;
 }
 
-/* Popup overlay - hidden by default */
 .popup-overlay {
     display: none;
     position: fixed;
@@ -164,12 +166,10 @@ a {
     z-index: 1000;
 }
 
-/* Show popup when checkbox is checked */
 .popup-checkbox:checked ~ .popup-overlay {
     display: block;
 }
 
-/* Popup box */
 .popup-content {
     position: fixed;
     top: 50%;
@@ -191,6 +191,8 @@ a {
     cursor: pointer;
     color: #999;
     line-height: 20px;
+    background: none;
+    border: none;
 }
 
 .close-button:hover {
@@ -203,9 +205,7 @@ a {
 }
 
 
-/* 
-CONTACT Page
-*/
+/* CONTACT Page */
 
 #contactbox {
     display: flex;
@@ -227,9 +227,7 @@ CONTACT Page
 #contactmargin {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    /*border: 2px solid black;*/
-    
+    flex: 1;    
 }
 
 #emailbox {
@@ -259,4 +257,14 @@ CONTACT Page
 #contactcontent {
     font-weight: 300;
     font-size: 25px;
+}
+
+.textarea {
+    resize:none;
+    width: 50%;
+    height: 60%;
+}
+
+.textareabox {
+    resize: none;
 }

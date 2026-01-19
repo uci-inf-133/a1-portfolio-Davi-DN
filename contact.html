@@ -9,7 +9,7 @@ EMAIL: ddngo3@uci.edu
 <head>
   <meta charset="utf-8">
   <meta name="author" content="David Ngo">
-  <meta name="description" content="Online Portfolio for David Ngo">
+  <meta name="description" content="Contact Page for David Ngo">
    <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +19,7 @@ EMAIL: ddngo3@uci.edu
   <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
 </head>
-
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-      W3C validator
-    </a>
-  </p>
 
  <!-- The top bar containing name and other pages-->
   <div id="topbox">
@@ -35,9 +29,9 @@ EMAIL: ddngo3@uci.edu
           David Ngo
         </a>
       </h1>
-      <b id="titlesubtext">
+      <strong id="titlesubtext">
         Software Engineer.
-      </b>
+      </strong>
     </div>
   
 
@@ -62,9 +56,9 @@ EMAIL: ddngo3@uci.edu
     <input type="checkbox" id="popup-toggle" class="popup-checkbox">
     
     <!-- Popup -->
-    <div class="popup-overlay">
-        <div class="popup-content">
-            <label for="popup-toggle" class="close-button">&times;</label>
+  <div class="popup-overlay">
+      <div class="popup-content" role="dialog" aria-modal="true">
+          <label for="popup-toggle" class="close-button" aria-hidden="true" tabindex="-1">&times;</label>
             <h2>Links</h2>
             <div class="links-info">
                   <a href="https://github.com/Davi-DN/">
@@ -86,34 +80,43 @@ EMAIL: ddngo3@uci.edu
       <div id="contactbox">
 
         <div id="contactmargin">
-
           <div id="contacttitlebox">
-            <h2 id="contacttitle"><b>
+            <h2 id="contacttitle"><strong>
               CONTACT
-            </b></h2>
+            </strong></h2>
           </div>
 
           <div id="contactcontentbox">
             <h3 class="contactportions"><br>Email:</h3> <p class="contactcontent">dngo0908@gmail.com</p>
             <h3 class="contactportions">Phone Number:</h3> <p class="contactcontent">(562) 486-1322</p>
           </div>
-          
         </div>
         
         <div id="emailbox">
-          <h2 id="emailmetitle"><b>
+          <h2 id="emailmetitle"><strong>
           EMAIL ME
-          </b></h2>
-          test<br><br><br>test2
+          </strong></h2>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2729ea3d-7df9-44c6-82ed-f5b76f52cb27">
+
+            <label for="name"><strong>Name</strong></label>
+            <input type="text" id="name" name="name" required>
+
+            <br>
+            <label for="email"><strong>Email</strong></label>
+            <input type="text" id="email" name="email" required>
+
+            <br><br>
+            <label for="message"><strong>Message</strong></label>            
+            <div class="textareabox">
+              <textarea class="textarea" id="message" name="message" required></textarea>
+            </div>  
+
+            <br><button type="submit">Submit</button>
+          </form>
         </div>
-        
-        
       </div>
     </div>
-
-
-
-
 
 </body>
 </html>
